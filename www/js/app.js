@@ -28,17 +28,66 @@ var app  = new Framework7({
 
 // Init/Create main view
 var mainView = app.views.create('.view-main', {
-  url: '/'
+	url: '/'
 });
 
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
-  var username = $$('#my-login-screen [name="username"]').val();
-  var password = $$('#my-login-screen [name="password"]').val();
+	console.log("Clicked");
+	
+  var user = $$('#my-login-screen [name="username"]').val();
+  var pass = $$('#my-login-screen [name="password"]').val();
 
   // Close login screen
   app.loginScreen.close('#my-login-screen');
 
-  // Alert username and password
-  app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
+  app.request.post('http://86.162.56.98/demo_file.php:8080', { username: user, password: pass, dataType: 'jsonp' }, function (data) {
+		app.dialog.alert(data);
+		if(data=="Logged in!"){
+			
+		}
+   });
 });
+
+$$('.register-form .signup-button').on('click', function () {
+	console.log("Clicked");
+	
+  var user = $$('.register-form [name="username"]').val();
+  var pass = $$('.register-form [name="password"]').val();
+
+  // Close login screen
+  app.popup.close('.register-form');
+
+  app.request.post('http://86.162.56.98/register_user.php:8080', { username: user, password: pass, dataType: 'jsonp' }, function (data) {
+		app.dialog.alert(data);
+		if(data=="Signed up!"){
+			
+		}
+   });
+});
+
+$$('form.form-ajax-submit').on('formajax:success', function (e) {
+  var xhr = e.detail.xhr; // actual XHR object
+
+  var data = e.detail.data; // Ajax response from action file
+  app.dialog.alert(e.detail.data);
+});
+
+
+$$('form.form-ajax-submit').on('formajax:error', function (e) {
+	app.dialog.alert("fuck");
+});
+
+$$('#login-form .button').on('click', function(){
+	
+	$$('#details').html(username);
+});
+
+var popup = app.popup.create({
+  content: '<div class="popup">...</div>',
+  on: {
+    opened: function () {
+      console.log('Popup opened')
+    }
+  }
+})

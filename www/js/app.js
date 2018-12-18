@@ -41,7 +41,7 @@ $$('#my-login-screen .login-button').on('click', function () {
   // Close login screen
   app.loginScreen.close('#my-login-screen');
 
-  app.request.post('http://86.162.56.98/demo_file.php:8080', { username: user, password: pass, dataType: 'jsonp' }, function (data) {
+  app.request.post('http://127.0.0.1/demo_file.php', { username: user, password: pass, dataType: 'jsonp' }, function (data) {
 		app.dialog.alert(data);
 		if(data=="Logged in!"){
 			
@@ -58,7 +58,7 @@ $$('.register-form .signup-button').on('click', function () {
   // Close login screen
   app.popup.close('.register-form');
 
-  app.request.post('http://86.162.56.98/register_user.php:8080', { username: user, password: pass, dataType: 'jsonp' }, function (data) {
+  app.request.post('http://127.0.0.1/register_user.php', { username: user, password: pass, dataType: 'jsonp' }, function (data) {
 		app.dialog.alert(data);
 		if(data=="Signed up!"){
 			

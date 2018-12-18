@@ -12,12 +12,20 @@ routes = [
     url: './pages/form.html',
   },
   {
+    path: '/login/',
+    url: './pages/index.html',
+  },
+  {
 	path: '/profile/',
-	url: './profile.html'
+	url: './pages/profile.html'
   },
   {
 	path: '/register/',
 	url: './pages/register.html'
+  },
+  {
+	path: '/guest/',
+	url: './pages/guest.html'
   },
   // Page Loaders & Router
   {

@@ -1,1 +1,146 @@
 /* Your app styles here */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	background-position: 0% 0%;
+	background-color:#E73E1C;
+	animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+#bubble_screen {
+	background-image:url("img/bubble_bg.png");
+	background-size:cover;
+}
+
+#app .logo-img img {
+	margin-top:250px;
+	border: 2px solid black;
+}
+
+#app .look {
+	position:absolute;
+	bottom:0;
+	color:#29b6f6;
+	left:0;
+	right:0;
+}
+
+#bottom-right {
+	position: fixed;
+	bottom: -50px;
+	left: -75px;
+}
+
+#top-center {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+}
+
+.bubble {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	background-color:white;
+}
+
+.bubble img {
+	position: fixed;
+	left:0;
+	right:0;
+	bottom:50px;
+	display:block;
+    float:center;
+}
+
+.bubble-2 {
+	position:fixed;
+
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color:white;
+	top:20px;
+	left: 35%;
+}
+
+.bubble-2 img {
+	position: fixed;
+	display:block;
+    float:center;
+	margin-left:40px;
+	margin-top:35px;
+}
+
+.bubble-3 {
+	position:fixed;
+
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
+	background-color:white;
+	top:165px;
+	left: 15%;
+}
+
+.bubble-3 span {
+	display: block;
+	word-wrap:break-word;
+	width:125px;
+	text-align: center;
+	line-height:125px;
+}
+
+.bubble-4 {
+	position:fixed;
+
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
+	background-color:white;
+	top:295px;
+	left: 5px;
+}
+
+.bubble-4 span {
+	display: block;
+	word-wrap:break-word;
+	width:125px;
+	text-align: center;
+	line-height:125px;
+}
+
+.bubble-5 {
+	position:fixed;
+
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color:white;
+	bottom:200px;
+	right: 5px;
+}
+
+.bubble-5 span {
+	display: block;
+	word-wrap:break-word;
+	width:100px;
+	text-align: center;
+	line-height:100px;
+}
+
+.bubble-6 {
+	position:fixed;
+	
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color:white;
+	
+	top:175px;
+	right:25px;
+}

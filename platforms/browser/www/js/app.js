@@ -97,11 +97,3 @@ var popup = app.popup.create({
 })
 
 focus();
-function endStart(){
-	var gd = document.getElementById("gd");
-	var view = document.getElementsByClassName("view");
-	gd.style.visibility = "hidden";
-	view[0].style.visibility = "visible";
-}
-
-window.setTimeout(endStart, 7500);

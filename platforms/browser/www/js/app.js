@@ -31,6 +31,10 @@ var mainView = app.views.create('.view-main', {
 	url: '/'
 });
 
+var start = document.getElementById("start");
+start.volume = 0.05;
+
+
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
 	console.log("Clicked");
@@ -91,3 +95,13 @@ var popup = app.popup.create({
     }
   }
 })
+
+focus();
+function endStart(){
+	var gd = document.getElementById("gd");
+	var view = document.getElementsByClassName("view");
+	gd.style.visibility = "hidden";
+	view[0].style.visibility = "visible";
+}
+
+window.setTimeout(endStart, 7500);

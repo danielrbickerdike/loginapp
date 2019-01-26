@@ -1,48 +1,63 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="css/app.css">
-		<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
-	</head>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="path/to/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="path/to/my-app.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
 
-	<body>
-		<div class="page" data-name="guest">
-			<div class="page-content" style="background-image:url('img/bubble_bg.png');background-size:cover;">
-				<div id="bubble_screen">
-					<div id="bottom-right">
-						<div class="bubble">
-							<span>
-								<img src="img/games-design-logo-white.png" width=100 />
-							</span>
-						</div>
-					</div>
-					
-					<div id="top-center">
-						<div class="bubble-2">
-							<span>
-								<img src="img/play-button.png" width=75 />
-							</span>
-						</div>
-					</div>
-					
-					<div class="bubble-3">
-						<span>
-							Message Board
-						</span>
-					</div>
-					
-					<div class="bubble-4">
-						<span>
-							Your Tutors
-						</span>
-					</div>
-					
-					<div class="bubble-5">
-						<span>
-							Events
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-<html>
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title"><i class="icon icon-back"></i>LCC Games Design</div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="row" style="margin-top:50px">
+                <!-- Each "cell" has col-[width in percents] class -->
+                <div class="col-50">
+                  <center>
+                    <a href="/board/"><img src="img/tiles/message_board.png" width=150 class="elevation-4" /></a>
+                  </center>
+                </div>
+                <div class="col-50">
+                  <center>
+                  <a href="/tutors/"><img src="img/tiles/your_tutors.png" width=150 class="elevation-4" /></a>
+                </center>
+              </div>
+            </div>
+            <center>
+              <a href="/events/"><img src="img/tiles/events.png" width=150 class="elevation-4" style="margin-top:50px"/></a>
+            </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="path/to/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="path/to/my-app.js"></script>
+  </body>
+</html>

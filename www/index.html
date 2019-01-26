@@ -26,13 +26,17 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
-<body class="color-theme-orange">
-  <div id="app">
 
+<body class="color-theme-red">
+  <div id="app">
+	<center>
+		<iframe id = "gd" src="img/games_design/game_design.html"></iframe>
+	</center>
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main ios-edges">
       <!-- Page, data-name contains page name which can be used in callbacks -->
       <br />
+	  
 	  <center>
 		<p><img src="img/game-design-logo.png" class="logo-img" width=200 /></p>
 		<p><a class="button button-big button-fill" style="width:50%;color:red;background-color:white">Student Panel</a></p>
@@ -45,6 +49,10 @@
   <!--
   <script src="cordova.js"></script>
   -->
+  
+  <audio autoplay id="start">
+	<source src="sound/startup.ogg" type="audio/ogg">
+  </audio>
 
   <!-- Framework7 library -->
   <script src="framework7/js/framework7.min.js"></script>
@@ -56,4 +64,3 @@
   <script src="js/app.js"></script>
 </body>
 </html>
-

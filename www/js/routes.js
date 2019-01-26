@@ -27,6 +27,18 @@ routes = [
 	path: '/guest/',
 	url: './pages/guest.html'
   },
+  {
+  path: '/events/',
+  url: './pages/events.html'
+  },
+  {
+  path: '/tutors/',
+  url: './pages/tutors.html'
+  },
+  {
+  path: '/board/',
+  url: './pages/board.html'
+  },
   // Page Loaders & Router
   {
     path: '/page-loader-template7/:user/:userId/:posts/:postId/',

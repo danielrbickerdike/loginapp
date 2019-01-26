@@ -8,45 +8,45 @@
   },
   "installed_plugins": {
     "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.lcc.app"
-    },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.lcc.app"
+      "PACKAGE_NAME": "com.lcc.gamesapp"
     }
   }
 }
